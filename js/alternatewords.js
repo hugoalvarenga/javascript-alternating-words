@@ -12,14 +12,15 @@ window.onload = function Init(){
 
 function StartProcess(){
 
-  if(index >= words.length)
+  if(index >= words.length){
     index = 0
 
-  var div = document.getElementById('app')
-  div.className = "";
+    var div = document.getElementById('app')
+    div.className = "";
 
-  div.innerHTML = words[index]
-  index++;
+    div.innerHTML = words[index]
+    index++;
 
-  setTimeout(StartProcess, 300)
+    setTimeout(StartProcess, 300)
+  }
 }
